@@ -13,13 +13,12 @@ public class NumerosPrimos {
         {
             int divisionEntera = i;
             int contador=0;
-            while (divisionEntera != 0){
+            while (divisionEntera != 0)
+        {
             divisionEntera = divisionEntera / 10;
             contador++;
         }
-        ndigitos=contador;
-            
-            
+        ndigitos=contador;    
             if(ndigitos==numDigitos){
                    if (i < 4) p = true;
             else
