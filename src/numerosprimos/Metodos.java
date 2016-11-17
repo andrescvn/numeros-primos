@@ -13,7 +13,9 @@ import javax.swing.JOptionPane;
  */
 public class Metodos {
         public int pedirNumDigitos(){
-         int dato=Integer.parseInt(JOptionPane.showInputDialog("introducir numero"));
-        return dato;
+         int numDigitos=Integer.parseInt(JOptionPane.showInputDialog("introducir numero"));
+        if(numDigitos<=0)
+        System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
+        return numDigitos;
     }
 }
