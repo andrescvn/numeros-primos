@@ -5,15 +5,13 @@ public class NumerosPrimos {
         {
         Metodos met = new Metodos();
         int numDigitos=met.pedirNumDigitos();
-        int ndigitos=0;
         for(int i = 1; i <= 99999; i++ ){
             int divisionEntera = i;
-            int contador=0;
+            int ndigitos=0;
             while (divisionEntera != 0){
             divisionEntera = divisionEntera / 10;
-            contador++;
-        }
-        ndigitos=contador;    
+            ndigitos++;
+        }  
         met.primos(ndigitos, numDigitos, i);
         }
         }
