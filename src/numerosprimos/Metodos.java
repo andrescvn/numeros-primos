@@ -30,7 +30,7 @@ public class Metodos {
             return cDigitos;
     }
 
-    public void primos(int cDigitos, int numDigitos, int i) {
+    public void sacarPrimos(int cDigitos, int numDigitos, int i) {
         if (cDigitos == numDigitos) {
             if (i < 4) {
                 primo = true;
