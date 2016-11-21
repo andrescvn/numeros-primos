@@ -22,8 +22,8 @@ public class Metodos {
     }
     
 
-    public void primos(int nDigitos, int numDigitos, int i) {
-        if (nDigitos == numDigitos) {
+    public void primos(int cDigitos, int numDigitos, int i) {
+        if (cDigitos == numDigitos) {
             if (i < 4) {
                 primo = true;
             } else if (i % 2 == 0) {

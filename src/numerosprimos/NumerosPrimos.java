@@ -6,12 +6,12 @@ public class NumerosPrimos {
         int numDigitos = met.pedirNumDigitos();
         for (int i = 1; i <= 99999; i++) {
             int divisionEntera = i;
-            int nDigitos = 0;
+            int cDigitos = 0;
             while (divisionEntera != 0) {
                 divisionEntera = divisionEntera / 10;
-                nDigitos++;
+                cDigitos++;
             }
-            met.primos(nDigitos, numDigitos, i);
+            met.primos(cDigitos, numDigitos, i);
         }
     }
 }
