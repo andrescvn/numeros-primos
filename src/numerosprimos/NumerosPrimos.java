@@ -10,6 +10,7 @@ public class NumerosPrimos {
         for (int i = 1; i <= 99999; i++) {
         int cDigitos=met.calculaDigitos(i);
         met.sacarPrimos(cDigitos, numDigitos, i);
+        met.amosar(i);
     }
 }
 }

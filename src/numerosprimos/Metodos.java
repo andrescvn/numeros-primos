@@ -16,51 +16,50 @@ public class Metodos {
 
     public static int pedirNumDigitos() {
         int numDigitos = Integer.parseInt(JOptionPane.showInputDialog("introducir numero"));
-        while (numDigitos <= 0 || numDigitos > 5) 
+        while (numDigitos <= 0 || numDigitos > 5) {
             numDigitos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): "));
+        }
         return numDigitos;
     }
-    public int calculaDigitos (int i){
-            int divisionEntera = i;
-            int cDigitos = 0;
-            while (divisionEntera != 0) {
-                divisionEntera = divisionEntera / 10;
-                cDigitos++;
-            }
-            return cDigitos;
+
+    public int calculaDigitos(int i) {
+        int divisionEntera = i;
+        int cDigitos = 0;
+        while (divisionEntera != 0) {
+            divisionEntera = divisionEntera / 10;
+            cDigitos++;
+        }
+        return cDigitos;
     }
 
     public void sacarPrimos(int cDigitos, int numDigitos, int i) {
         if (cDigitos == numDigitos) {
-            if (i < 4) {
+            if (i < 4) 
                 primo = true;
-            } else if (i % 2 == 0) {
+            else if (i % 2 == 0) 
                 primo = false;
-            } else {
+            else {
                 int contador = 0;
                 int i1 = 1;
                 int limite = (i - 1) / 2;
-                if (limite % 2 == 0) {
-                    limite--;
-                }
+                if (limite % 2 == 0) 
+                    limite--;  
                 while (i1 <= limite) {
-                    if (i % i1 == 0) {
-                        contador++;
-                    }
+                    if (i % i1 == 0) 
+                        contador++;                  
                     i1 += 2;
-                    if (contador == 2) {
-                        i1 = limite + 1;
-                    }
+                    if (contador == 2) 
+                        i1 = limite + 1;                   
                 }
-
-                if (contador == 1) {
-                    primo = true;
-                }
-            }
-            if (primo == true) {
-                System.out.println(i);
+                if (contador == 1) 
+                    primo = true;   
             }
         }
     }
-    
+
+    public void amosar(int i) {
+        if (primo == true) {
+            System.out.println(i);
+        }
+    }
 }
