@@ -20,9 +20,10 @@ public class Metodos {
             numDigitos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): "));
         return numDigitos;
     }
+    
 
-    public void primos(int ndigitos, int numDigitos, int i) {
-        if (ndigitos == numDigitos) {
+    public void primos(int nDigitos, int numDigitos, int i) {
+        if (nDigitos == numDigitos) {
             if (i < 4) {
                 primo = true;
             } else if (i % 2 == 0) {
@@ -53,4 +54,5 @@ public class Metodos {
             }
         }
     }
+    
 }
