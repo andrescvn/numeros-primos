@@ -20,7 +20,15 @@ public class Metodos {
             numDigitos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): "));
         return numDigitos;
     }
-    
+    public int calculaDigitos (int i){
+            int divisionEntera = i;
+            int cDigitos = 0;
+            while (divisionEntera != 0) {
+                divisionEntera = divisionEntera / 10;
+                cDigitos++;
+            }
+            return cDigitos;
+    }
 
     public void primos(int cDigitos, int numDigitos, int i) {
         if (cDigitos == numDigitos) {
