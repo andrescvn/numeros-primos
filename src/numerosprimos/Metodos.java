@@ -31,15 +31,8 @@ public class Metodos {
         }
         return cDigitos;
     }
-
-    public void sacarPrimos(int cDigitos, int numDigitos, int i) {
-        if (cDigitos == numDigitos) {
-            if (i < 4) 
-                primo = true;
-            else if (i % 2 == 0) 
-                primo = false;
-            else {
-                int contador = 0;
+    public void sacarPrimo (int i){
+                        int contador = 0;
                 int i1 = 1;
                 int limite = (i - 1) / 2;
                 if (limite % 2 == 0) 
@@ -52,11 +45,8 @@ public class Metodos {
                         i1 = limite + 1;                   
                 }
                 if (contador == 1) 
-                    primo = true;   
-            }
-        }
+                    primo = true;  
     }
-
     public void amosar(int i) {
         if (primo == true) {
             System.out.println(i);
