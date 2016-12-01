@@ -32,7 +32,7 @@ public class Metodos {
         return cDigitos;
     }
 
-    public void sacarPrimo(int i) {
+    public boolean sacarPrimo(int i) {
         int contador = 0;
         int i1 = 1;
         int limite = (i - 1) / 2;
@@ -51,6 +51,7 @@ public class Metodos {
         if (contador == 1) {
             primo = true;
         }
+        return primo;
     }
 
     public void amosar(int i) {
